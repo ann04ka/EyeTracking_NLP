@@ -1,44 +1,44 @@
 # Eye Tracking + NLP: Automated Description of Gaze Trajectories
 
-Этот проект посвящён автоматической генерации текстовых описаний траекторий взгляда на основе визуализаций айтрекинга с использованием Vision-Language Models (VLMs).
+This project focuses on the automatic generation of textual descriptions of gaze trajectories based on eye-tracking visualizations using Vision-Language Models (VLMs).
 
-## 🧩 Описание задачи
+## 🧩 Task Description
 
-Айтрекинг позволяет анализировать, куда смотрит человек, но интерпретация данных требует времени и экспертизы. Мы решаем задачу автоматического перевода визуализированных данных айтрекинга (фиксации, саккады, изменения зрачка) в структурированное описание на естественном языке.
+Eye tracking allows us to analyze where a person is looking, but interpreting the data requires time and expertise. We address the task of automatically translating visualized eye-tracking data (fixations, saccades, pupil changes) into structured natural language descriptions.
 
-## 📁 Содержание репозитория
+## 📁 Repository Contents
 
-- `EyeTracking_NLP.ipynb` — Jupyter Notebook с кодом обучения и оценки моделей.
-- `AnnotatingImages.ipynb` — Jupyter Notebook с кодом для создания аннотаций к изображениям айтрекинга.
+- `EyeTracking_NLP.ipynb` — Jupyter Notebook with code for model training and evaluation.
+- `AnnotatingImages.ipynb` — Jupyter Notebook with code for creating annotations for eye-tracking images.
 
-## 🤖 Используемые модели
+## 🤖 Models Used
 
-Мы тестируем и дообучаем следующие Vision-Language модели:
+We test and fine-tune the following Vision-Language models:
 - **Qwen2.5-VL**
 - **Gemma 3 4B**
-- Классические Image2Text модели: BLIP, GIT, ViT-GPT2, Paligemma
+- Classic Image-to-Text models: BLIP, GIT, ViT-GPT2, Paligemma
 
-## 📊 Метрики
+## 📊 Metrics
 
-Оценка качества генерации проводится по трём метрикам:
-- **Total Similarity** — общий скор, объединяющий семантику и точность ответа.
-- **Semantic Similarity** — схожесть с эталонным описанием (на основе Sentence-BERT).
-- **Answer Accuracy** — точность распознавания финального выбора пользователя.
+The quality of generated descriptions is evaluated using three metrics:
+- **Total Similarity** — overall score combining semantics and answer accuracy.
+- **Semantic Similarity** — similarity to the reference description (based on Sentence-BERT).
+- **Answer Accuracy** — accuracy in recognizing the user's final choice.
 
-## ✅ Требования
+## ✅ Requirements
 
-Для запуска ноутбуков потребуется установить:
+To run the notebooks, install the following dependencies:
 
 ```bash
 pip install transformers datasets accelerate sentence-transformers
 ```
 
-## 📚 Благодарности
+## 📚 Acknowledgments
 
-- [Qwen-VL](https://github.com/QwenLM/Qwen-VL) 
-- [Gemma](https://deepmind.google/technologies/gemma/) 
-- [Sentence-BERT](https://www.sbert.net/) 
+- [Qwen-VL](https://github.com/QwenLM/Qwen-VL)   
+- [Gemma](https://deepmind.google/technologies/gemma/)   
+- [Sentence-BERT](https://www.sbert.net/)   
 
-## 📎 Дополнительные материалы
+## 📎 Additional Materials
 
-- [Статья проекта (PDF)](NLP_EyTracking.pdf) — подробное описание задачи, методов и результатов исследования.
+- [Project Paper (PDF)](NLP_EyTracking.pdf) — detailed description of the task, methods, and research results.
