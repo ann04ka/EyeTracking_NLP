@@ -31,3 +31,14 @@
 
 ```bash
 pip install transformers datasets accelerate sentence-transformers
+```
+
+## 📚 Благодарности
+
+- [Qwen-VL](https://github.com/QwenLM/Qwen-VL) 
+- [Gemma](https://deepmind.google/technologies/gemma/) 
+- [Sentence-BERT](https://www.sbert.net/) 
+
+## 📎 Дополнительные материалы
+
+- [Статья проекта (PDF)](NLP_EyTracking.pdf) — подробное описание задачи, методов и результатов исследования.
