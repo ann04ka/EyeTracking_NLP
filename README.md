@@ -41,4 +41,4 @@ pip install transformers datasets accelerate sentence-transformers
 
 ## 📎 Additional Materials
 
-- [Project Preprint (PDF)](NLP_EyTracking_.pdf) — detailed description of the task, methods, and research results.
+- [Project Preprint (PDF)](NLP_EyeTracking_.pdf) — detailed description of the task, methods, and research results.
