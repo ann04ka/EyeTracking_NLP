@@ -28,6 +28,8 @@ The quality of generated descriptions is evaluated using three metrics:
 - **Semantic Similarity** — similarity to the reference description (based on Sentence-BERT).
 - **Answer Accuracy** — accuracy in recognizing the user's final choice.
 
+![Comparison of vision-language models by evaluation metrics: total similarity, semantic similarity, and answer accuracy](stat.png)
+
 ## ✅ Requirements
 
 To run the notebooks, install the following dependencies:
