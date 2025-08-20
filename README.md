@@ -6,6 +6,9 @@ This project focuses on the automatic generation of textual descriptions of gaze
 
 Eye tracking allows us to analyze where a person is looking, but interpreting the data requires time and expertise. We address the task of automatically translating visualized eye-tracking data (fixations, saccades, pupil changes) into structured natural language descriptions.
 
+![Example of an eye-tracking visualization from the test set used as input to the fine-tuned model](results.PNG)
+
+
 ## 📁 Repository Contents
 
 - `EyeTracking_NLP.ipynb` — Jupyter Notebook with code for model training and evaluation.
